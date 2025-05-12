@@ -12,14 +12,14 @@ A minimal Flask web app wrapped in a Docker container. When you run this image, 
   http://localhost:5000
 
   You’ll see:
-# Hello from my Docker image!
+### Hello from my Docker image!
 
 
 
 **Dockerfile (Reference)**
 
-FROM python:3.9-slim
-WORKDIR /app
+FROM python:3.9-slim  
+WORKDIR /app    
 COPY app.py .
 RUN pip install flask
 CMD ["python", "app.py"]
