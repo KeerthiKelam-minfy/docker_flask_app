@@ -20,6 +20,6 @@ A minimal Flask web app wrapped in a Docker container. When you run this image, 
 
 FROM python:3.9-slim  
 WORKDIR /app    
-COPY app.py .
-RUN pip install flask
+COPY app.py .  
+RUN pip install flask  
 CMD ["python", "app.py"]
